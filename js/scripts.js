@@ -11,12 +11,14 @@ window.onload = function() {
 
     const animal = document.querySelector("input#animalInput").value;
 
-    if (animalInput === "turtle"){
-      turtleInfo.removeAttribute("class", "hidden");
-    } else if {
-      snakeInfo.removeAttribute("class", "hidden");
+    if (animal === "turtles"){
+      turtleInfo.removeAttribute("class");
+    } else if (animal === "snakes") {
+      snakeInfo.removeAttribute("class");
+    } else if (animal === "insects") {
+      insectInfo.removeAttribute("class");
     } else {
-      insectInfo.removeAttribute("class", "hidden");
+      window.alert("Error: We dont have that animal");
     }
   }
 }
